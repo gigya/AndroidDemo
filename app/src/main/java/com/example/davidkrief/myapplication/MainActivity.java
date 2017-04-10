@@ -31,9 +31,9 @@ import com.gigya.socialize.android.event.GSSocializeEventListener;
 
 public class MainActivity extends AppCompatActivity  {
 
+
     private static final String TAG = MainActivity.class.getCanonicalName();
     public final static String EXTRA_MESSAGE = "com.example.davidkrief.myapplication.MESSAGE";
-    private static final String GIGYA_API_KEY = "3_cEDnooVO_1LwDGsBA4mFMem_hZVbFddTh2QuV9NaK4Po95ocWK6-74SAqd_g6l4k";
     public static MainActivity la;
 
     private String globalRegToken;
@@ -128,7 +128,8 @@ public class MainActivity extends AppCompatActivity  {
 
     public void initGigya() {
 
-        GSAPI.getInstance().initialize(this, GIGYA_API_KEY,"us1.gigya.com");
+
+        GSAPI.getInstance().initialize(this, getString(R.string.gigya_api_key), getString(R.string.api_domain) + ".gigya.com");
 
 
         GSAPI.getInstance().setSocializeEventListener(new GSSocializeEventListener() {

@@ -7,5 +7,13 @@
     <string name="button_send">Send</string>
     <string name="title_activity_display_message">My Message</string>
 
-    <string name="app_id">1153310244719404</string>
+
+
+
+    <string name="gigya_api_key">3_cEDnooVO_1LwDGsBA4mFMem_hZVbFddTh2QuV9NaK4Po95ocWK6-74SAqd_g6l4k</string>
+    <string name="api_domain">us1</string>
+    <string name="facebook_app_id">1153310244719404</string>
+
+
+
 </resources>
