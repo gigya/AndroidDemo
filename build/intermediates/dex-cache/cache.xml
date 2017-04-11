@@ -3,12 +3,12 @@
 
     <item
         is-multidex="false"
-        jar="/Users/davidkrief/Google Drive/DEV/android/MyGigyaAndroid_Linking_NativeFbGoogle_OPERATIONNEL/AndroidDemo/app/libs/gigya-sdk-3.3.4.jar"
+        jar="/Users/davidkrief/Google Drive/DEV/android/MyGigyaAndroid_Linking_NativeFbGoogle_OPERATIONNEL/app/libs/gigya-sdk-3.3.4.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
         sha1="c228cf4aa9c4fbf91d9c2a57c1d7ea66f8f6a34d">
-        <dex dex="/Users/davidkrief/Google Drive/DEV/android/MyGigyaAndroid_Linking_NativeFbGoogle_OPERATIONNEL/AndroidDemo/app/build/intermediates/pre-dexed/debug/gigya-sdk-3.3.4_ff6df7a1a6d2d053d9bd6a9ad52fba4ff5c79864.jar" />
+        <dex dex="/Users/davidkrief/Google Drive/DEV/android/MyGigyaAndroid_Linking_NativeFbGoogle_OPERATIONNEL/app/build/intermediates/pre-dexed/debug/gigya-sdk-3.3.4_13d4b1b9dfeb20934b33e7302aedec68e95e3ed3.jar" />
     </item>
 
 </items>

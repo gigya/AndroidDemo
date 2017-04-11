@@ -125,9 +125,7 @@ public class MainActivity extends AppCompatActivity  {
     }
 
 
-
     public void initGigya() {
-
 
         GSAPI.getInstance().initialize(this, getString(R.string.gigya_api_key), getString(R.string.api_domain) + ".gigya.com");
 

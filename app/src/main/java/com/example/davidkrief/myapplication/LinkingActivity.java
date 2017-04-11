@@ -12,8 +12,7 @@ import android.widget.Spinner;
 import com.gigya.socialize.GSArray;
 
 public class LinkingActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
-
-
+    
     private static final String TAG = LinkingActivity.class.getCanonicalName();
 
     private Spinner spinner;
