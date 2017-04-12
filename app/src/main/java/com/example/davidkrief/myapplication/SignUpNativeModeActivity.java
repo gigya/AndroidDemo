@@ -40,6 +40,8 @@ public class SignUpNativeModeActivity extends AppCompatActivity {
 
     private Button fbLoginButton;
     private Button googleLoginButton;
+    private Button twitterLoginButton;
+
     private EditText nameInput;
     private EditText emailInput;
     private EditText confirmEmailInput;
@@ -63,6 +65,8 @@ public class SignUpNativeModeActivity extends AppCompatActivity {
 
         fbLoginButton = (Button) findViewById(R.id.fbLoginButton);
         googleLoginButton = (Button) findViewById(R.id.googleLoginButton);
+        twitterLoginButton = (Button) findViewById(R.id.twitterLoginButton);
+
         nameInput = (EditText) findViewById(R.id.nameInput);
         emailInput = (EditText) findViewById(R.id.emailInput);
         confirmEmailInput = (EditText) findViewById(R.id.confirmEmailInput);
@@ -95,6 +99,17 @@ public class SignUpNativeModeActivity extends AppCompatActivity {
                 }
             }
         });
+        twitterLoginButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    MainActivity.la.login("twitter");
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+
 
 
 

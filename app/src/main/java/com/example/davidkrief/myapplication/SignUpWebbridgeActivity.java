@@ -4,6 +4,7 @@ import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MenuItem;
 import android.webkit.CookieManager;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -27,7 +28,6 @@ public class SignUpWebbridgeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_sign_up_webbridge_mode);
 
         webView = (WebView) findViewById(R.id.webView);
-
 
 
 
@@ -88,4 +88,6 @@ public class SignUpWebbridgeActivity extends AppCompatActivity {
 
 
     }
+
+
 }

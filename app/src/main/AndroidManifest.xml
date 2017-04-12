@@ -84,7 +84,10 @@
         <activity
             android:name="com.facebook.CustomTabActivity"
             android:exported="true"></activity>
-        <activity android:name=".SignUpWebbridgeActivity"></activity>
+
+        <activity
+            android:name=".SignUpWebbridgeActivity"
+            android:parentActivityName=".EmailSigninAndLinkingActivity" />
     </application>
 
 </manifest>

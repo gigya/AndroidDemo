@@ -13,11 +13,13 @@ import com.gigya.socialize.GSObject;
 import com.gigya.socialize.GSResponse;
 import com.gigya.socialize.GSResponseListener;
 import com.gigya.socialize.android.GSAPI;
+import com.gigya.socialize.android.GSPluginFragment;
 
 public class LoggedActivity extends AppCompatActivity {
 
     private TextView userStatus;
     private Button logoutButton;
+
     public static LoggedActivity ma;
 
 
@@ -36,6 +38,22 @@ public class LoggedActivity extends AppCompatActivity {
         Intent intent = getIntent();
         String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
         userStatus.setText("Logged as "+message);
+
+
+        // Comment plugin loaded within "layout"
+        GSObject paramsComments = new GSObject();
+        paramsComments.put("categoryID", "test");
+        paramsComments.put("streamID", "AndroidApp");
+        GSPluginFragment pluginFragmentComments = GSPluginFragment.newInstance("comments.commentsUI", paramsComments);
+        getSupportFragmentManager().beginTransaction().add(R.id.commentLayout, pluginFragmentComments, "comments").commit();
+
+
+        // Rating plugin loaded within "layout"
+        GSObject paramsRating = new GSObject();
+        paramsRating.put("categoryID", "rating");
+        paramsRating.put("streamID", "AndroidApp");
+        GSPluginFragment pluginFragmentRating = GSPluginFragment.newInstance("comments.commentsUI", paramsRating);
+        getSupportFragmentManager().beginTransaction().add(R.id.shareLayout, pluginFragmentRating, "rating").commit();
 
 
         logoutButton.setOnClickListener(new View.OnClickListener() {
