@@ -7,6 +7,17 @@
     tools:context=".MainActivity" >
 
 
+    <Button
+        android:id="@+id/createAccountWebbridgeMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/createAccountButtonScreenSetMode"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:text="Create account (webbridge)" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -56,26 +67,24 @@
         android:hint="Password" />
 
     <Button
+        android:id="@+id/createAccountButtonScreenSetMode"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Create an account (ScreenSet mode)"
-        android:id="@+id/createAccountButtonScreenSetMode"
         android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentStart="true"
+        android:text="Create an account (ScreenSet)" />
 
     <Button
+        android:id="@+id/createAccountNativeMode"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Create account (native mode)"
-        android:id="@+id/createAccountNativeMode"
-        android:layout_above="@+id/createAccountButtonScreenSetMode"
-        android:layout_alignParentLeft="true"
+        android:layout_above="@+id/createAccountWebbridgeMode"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:text="Create account (native)" />
 
     <TextView
         android:layout_width="wrap_content"

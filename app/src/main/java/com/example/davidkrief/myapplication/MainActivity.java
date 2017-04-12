@@ -178,6 +178,10 @@ public class MainActivity extends AppCompatActivity  {
                 }
             }
         }, null);
+
+
+
+
     }
 
     @Override
@@ -591,13 +595,6 @@ public class MainActivity extends AppCompatActivity  {
 
     }
 
-  /*  public void setUser(GSObject user) {
-        if (user == null) {
-            userStatus.setText("User is logged out");
-        } else {
-            userStatus.setText("User is logged in as " + user.getString("nickname", ""));
-        }
-    }*/
 
     public void logout() {
         GSAPI.getInstance().logout();
@@ -649,22 +646,4 @@ public class MainActivity extends AppCompatActivity  {
 
         alert.show();
     }
-/*
-
-
-
-    @Override
-    public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
-
-    }
-
-    @Override
-    public void onConnectionSuspended(int i) {
-
-    }
-
-    @Override
-    public void onConnected(@Nullable Bundle bundle) {
-
-    }*/
 }

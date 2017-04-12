@@ -3,6 +3,24 @@
 
     <item
         is-multidex="false"
+        jar="/Users/davidkrief/.android/build-cache/cb5dcd4bc70f54a5e852c4904f9e9d9f47eae6ab/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="affe29a90a2a709bfd2b8d6411aa99c05a2be96f">
+        <dex dex="/Users/davidkrief/Google Drive/DEV/android/MyGigyaAndroid_Linking_NativeFbGoogle_OPERATIONNEL/app/build/intermediates/pre-dexed/debug/classes_c1aaa92d335e4ab928be1daa1dfb7ce450a2eab0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/davidkrief/Library/Android/sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.0-alpha4/constraint-layout-solver-1.0.0-alpha4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a882fef6a6b9e3efbb0b6b001895a5fc7c35b391">
+        <dex dex="/Users/davidkrief/Google Drive/DEV/android/MyGigyaAndroid_Linking_NativeFbGoogle_OPERATIONNEL/app/build/intermediates/pre-dexed/debug/constraint-layout-solver-1.0.0-alpha4_6da82609f9b2930087b88a441f02affa5660015b.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Users/davidkrief/Google Drive/DEV/android/MyGigyaAndroid_Linking_NativeFbGoogle_OPERATIONNEL/app/libs/gigya-sdk-3.3.4.jar"
         jumboMode="false"
         optimize="true"

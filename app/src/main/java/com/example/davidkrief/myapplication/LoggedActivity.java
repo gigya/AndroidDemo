@@ -46,46 +46,6 @@ public class LoggedActivity extends AppCompatActivity {
             }
         });
 
-
-
-
-
-
-
-/*
-        // Step 1 - Defining request parameters
-        GSObject paramss = new GSObject();
-
-        paramss.put("UID", "2531f77cf4da4d9c83532bb959dcd728");
-        paramss.put("newPassword", "bbbbbB");
-        paramss.put("password", "aaaaaA");
-
-        GSResponseListener ressListener;
-
-
-
-        ressListener = new GSResponseListener() {
-            @Override
-            public void onGSResponse(String method, GSResponse response, Object context) {
-                try {
-                    Log.d("ef", response.toString());
-                    if (response.getErrorCode()==0) { // SUCCESS! response status = OK
-                        System.out.println("Success in setStatus operation.");
-                        Toast.makeText(getApplicationContext(), "An email regarding your password change has been sent to your email address.",
-                                Toast.LENGTH_LONG).show();
-
-                    } else {  // Error
-                        System.out.println("Got error on setStatus: " + response.getLog());
-                        Toast.makeText(getApplicationContext(), (String) response.getErrorMessage(),
-                                Toast.LENGTH_LONG).show();
-                    }
-                } catch (Exception ex) {  ex.printStackTrace();  }
-            }
-        };
-
-        String methoddName = "accounts.setAccountInfo";
-        GSAPI.getInstance().sendRequest(methoddName, paramss, ressListener, null);*/
-
     }
 
 

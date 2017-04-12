@@ -33,6 +33,7 @@ public class EmailSigninAndLinkingActivity extends AppCompatActivity {
 
     private Button okButton;
     private Button createAccountButtonScreenSetMode;
+    private Button createAccountButtonWebbridgeMode;
     private Button createAccountButtonNativeMode;
 
     private boolean forLinkingAccounts;
@@ -52,6 +53,7 @@ public class EmailSigninAndLinkingActivity extends AppCompatActivity {
         accountLinkingText = (TextView) findViewById(R.id.accountLinkingText);
         okButton = (Button) findViewById(R.id.okButton);
         createAccountButtonScreenSetMode = (Button) findViewById(R.id.createAccountButtonScreenSetMode);
+        createAccountButtonWebbridgeMode = (Button) findViewById(R.id.createAccountWebbridgeMode);
         createAccountButtonNativeMode = (Button) findViewById(R.id.createAccountNativeMode);
 
 
@@ -67,6 +69,7 @@ public class EmailSigninAndLinkingActivity extends AppCompatActivity {
                 Log.d(TAG, "to link accounts with token : "+globalRegToken);
 
                 // Adapting the email sign-in view for linking accouts
+                createAccountButtonWebbridgeMode.setVisibility(View.GONE);
                 createAccountButtonScreenSetMode.setVisibility(View.GONE);
                 createAccountButtonNativeMode.setVisibility(View.GONE);
                 emailInput.setText(extras.getString("conflictingLoginID"));
@@ -88,6 +91,12 @@ public class EmailSigninAndLinkingActivity extends AppCompatActivity {
             }
         });
 
+        createAccountButtonWebbridgeMode.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showRegistrationScreen("webbridge");
+            }
+        });
         createAccountButtonNativeMode.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -121,14 +130,23 @@ public class EmailSigninAndLinkingActivity extends AppCompatActivity {
     public void showRegistrationScreen(String mode){
         Intent intent = null;
         switch(mode) {
+            case "webbridge":
+                intent = new Intent(this, SignUpWebbridgeActivity.class);
+                startActivity(intent);
+                break;
             case "native":
                 intent = new Intent(this, SignUpNativeModeActivity.class);
+                startActivity(intent);
                 break;
             case "screenset":
-                intent = new Intent(this, SignUpScreenSetModeActivity.class);
+                GSObject params = new GSObject();
+                params.put("screenSet", "Default-RegistrationLogin");
+                params.put("startScreen", "gigya-register-screen");
+                GSAPI.getInstance().showPluginDialog("accounts.screenSet", params, null, null);
+                // intent = new Intent(this, SignUpScreenSetModeActivity.class);
                 break;
         }
-        startActivity(intent);
+
     }
 
     public void resetPassword(boolean byEmail){

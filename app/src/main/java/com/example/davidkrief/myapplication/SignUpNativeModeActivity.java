@@ -89,7 +89,7 @@ public class SignUpNativeModeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 try {
-                    MainActivity.la.login("google");
+                    MainActivity.la.login("googleplus");
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
