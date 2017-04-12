@@ -28,8 +28,9 @@ public class EmailSigninAndLinkingActivity extends AppCompatActivity {
     private TextView forgotPwDirect;
     private TextView forgotPwEmail;
 
-    private TextView accountLinkingTitle;
     private TextView accountLinkingText;
+    private TextView createAccountTitle;
+    private TextView title;
 
     private Button okButton;
     private Button createAccountButtonScreenSetMode;
@@ -49,9 +50,13 @@ public class EmailSigninAndLinkingActivity extends AppCompatActivity {
         pwInput = (EditText) findViewById(R.id.passwordInput);
         forgotPwDirect = (TextView) findViewById(R.id.forgotPasswordDirect);
         forgotPwEmail = (TextView) findViewById(R.id.forgotPasswordEmail);
-        accountLinkingTitle = (TextView) findViewById(R.id.accountLinkingTitle);
         accountLinkingText = (TextView) findViewById(R.id.accountLinkingText);
         okButton = (Button) findViewById(R.id.okButton);
+        createAccountTitle = (TextView) findViewById(R.id.createAccountTitle);
+
+        title = (TextView) findViewById(R.id.title);
+        title.setText("Log in (native implementation)");
+
         createAccountButtonScreenSetMode = (Button) findViewById(R.id.createAccountButtonScreenSetMode);
         createAccountButtonWebbridgeMode = (Button) findViewById(R.id.createAccountWebbridgeMode);
         createAccountButtonNativeMode = (Button) findViewById(R.id.createAccountNativeMode);
@@ -69,12 +74,15 @@ public class EmailSigninAndLinkingActivity extends AppCompatActivity {
                 Log.d(TAG, "to link accounts with token : "+globalRegToken);
 
                 // Adapting the email sign-in view for linking accouts
+
+                title.setText("Account linking");
+
                 createAccountButtonWebbridgeMode.setVisibility(View.GONE);
                 createAccountButtonScreenSetMode.setVisibility(View.GONE);
                 createAccountButtonNativeMode.setVisibility(View.GONE);
                 emailInput.setText(extras.getString("conflictingLoginID"));
                 emailInput.setFocusable(false);
-                accountLinkingTitle.setVisibility(View.VISIBLE);
+                createAccountTitle.setVisibility(View.GONE);
                 accountLinkingText.setVisibility(View.VISIBLE);
 
             }
