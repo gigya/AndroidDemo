@@ -84,7 +84,7 @@ public class SignUpWebbridgeActivity extends AppCompatActivity {
             CookieManager.getInstance().setAcceptThirdPartyCookies(webView,true);
         }
 
-        webView.loadUrl("https://david.gigya-cs.com/webbridge.php?apiKey="+getString(R.string.gigya_api_key));
+        webView.loadUrl("https://david.gigya-cs.com/webbridge.php?apiKey=" + getString(R.string.gigya_api_key));
 
 
     }
