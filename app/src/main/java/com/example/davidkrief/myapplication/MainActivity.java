@@ -209,7 +209,7 @@ public class MainActivity extends AppCompatActivity  {
 
     // Called on Login
     public void displayMainView(String firstname, String nickname) {
-        Intent intent = new Intent(this, LoggedActivity.class);
+        Intent intent = new Intent(MainActivity.this, LoggedActivity.class);
 
         // Make profile name
         String profileName = firstname;

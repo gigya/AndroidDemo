@@ -147,11 +147,7 @@ public class EmailSigninAndLinkingActivity extends AppCompatActivity {
                 startActivity(intent);
                 break;
             case "screenset":
-                GSObject params = new GSObject();
-                params.put("screenSet", "Default-RegistrationLogin");
-                params.put("startScreen", "gigya-register-screen");
-                GSAPI.getInstance().showPluginDialog("accounts.screenSet", params, null, null);
-                // intent = new Intent(this, SignUpScreenSetModeActivity.class);
+                intent = new Intent(this, SignUpScreenSetModeActivity.class);
                 break;
         }
 
