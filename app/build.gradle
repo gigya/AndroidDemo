@@ -30,7 +30,12 @@ dependencies {
     compile 'com.android.support:support-v4:25.3.1'
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha4'
-    compile 'com.facebook.android:facebook-android-sdk:[4,5)'
+    // compile 'com.facebook.android:facebook-android-sdk:[4,5)'
+    // https://mvnrepository.com/artifact/com.facebook.android/facebook-android-sdk
+    // https://mvnrepository.com/artifact/com.facebook.android/facebook-android-sdk
+    compile group: 'com.facebook.android', name: 'facebook-android-sdk', version: '4.21.1'
+
+
     compile 'com.google.android.gms:play-services-auth:10.2.1'
 
 
