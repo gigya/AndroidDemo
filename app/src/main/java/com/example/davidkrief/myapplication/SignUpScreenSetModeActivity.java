@@ -28,13 +28,6 @@ public class SignUpScreenSetModeActivity extends AppCompatActivity {
         GSObject params = new GSObject();
         params.put("screenSet", "Default-RegistrationLogin");
         params.put("startScreen", "gigya-register-screen");
-
-       // GSAPI.getInstance().showPluginDialog("accounts.screenSet", params, null, null);
-
-
-
-
-
         GSPluginFragment pluginFragment = GSPluginFragment.newInstance("accounts.screenSet", params);
         getSupportFragmentManager().beginTransaction().add(R.id.container, pluginFragment, "screenSet").commit();
     }
