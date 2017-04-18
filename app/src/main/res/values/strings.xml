@@ -9,9 +9,9 @@
 
 
     <!--Values to be customised-->
-    <string name="gigya_api_key">3_hL-RvNtWkFjBmbcrM0uN5QCImXlxGQuPVHjSPCDGYx-wIr7B5MtlNQOGkOdusp9U</string>
-    <string name="api_domain">us1</string>
-    <string name="facebook_app_id">1153310244719404</string>
+    <string name="gigya_api_key"></string>
+    <string name="api_domain"></string>
+    <string name="facebook_app_id"></string>
 
 
 

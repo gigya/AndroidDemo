@@ -148,6 +148,7 @@ public class EmailSigninAndLinkingActivity extends AppCompatActivity {
                 break;
             case "screenset":
                 intent = new Intent(this, SignUpScreenSetModeActivity.class);
+                startActivity(intent);
                 break;
         }
 
