@@ -21,12 +21,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/davidkrief/Google Drive/DEV/android/AndroidDemo/app/libs/gigya-sdk-3.3.4.jar"
+        jar="/Users/davidkrief/Google Drive/DEV/android/AndroidDemo/app/libs/gigya-sdk-3.3.5.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
-        sha1="c228cf4aa9c4fbf91d9c2a57c1d7ea66f8f6a34d">
-        <dex dex="/Users/davidkrief/Google Drive/DEV/android/AndroidDemo/app/build/intermediates/pre-dexed/debug/gigya-sdk-3.3.4_55f6c1036ae4da57bdca05640eee683e0a7556b1.jar" />
+        sha1="d19ac03211e578aa23b4380fe904f4ba4559fdf3">
+        <dex dex="/Users/davidkrief/Google Drive/DEV/android/AndroidDemo/app/build/intermediates/pre-dexed/debug/gigya-sdk-3.3.5_3481beb9764f67ff5dd2b74c95ba12e28006213f.jar" />
     </item>
     <item
         is-multidex="false"
