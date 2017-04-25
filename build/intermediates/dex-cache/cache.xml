@@ -12,21 +12,21 @@
     </item>
     <item
         is-multidex="false"
+        jar="/Users/davidkrief/Google Drive/DEV/android/AndroidDemo/app/libs/gigya-sdk-3.3.6.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="01228abb6ac6e60a84f5c48e654a253e7feb4108">
+        <dex dex="/Users/davidkrief/Google Drive/DEV/android/AndroidDemo/app/build/intermediates/pre-dexed/debug/gigya-sdk-3.3.6_a289def6fdd29e58779d0ddf9d52cdace5b420e7.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Users/davidkrief/.android/build-cache/43f809a2b4c33cecf9287dc92bc1dabd7a2f0870/output/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
         sha1="12032271e6be735e811ad529cb08ff066c381640">
         <dex dex="/Users/davidkrief/Google Drive/DEV/android/AndroidDemo/app/build/intermediates/pre-dexed/debug/classes_bf2f97631b37000fdcbf4c02bd548e6ae4741cab.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/davidkrief/Google Drive/DEV/android/AndroidDemo/app/libs/gigya-sdk-3.3.5.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="d19ac03211e578aa23b4380fe904f4ba4559fdf3">
-        <dex dex="/Users/davidkrief/Google Drive/DEV/android/AndroidDemo/app/build/intermediates/pre-dexed/debug/gigya-sdk-3.3.5_3481beb9764f67ff5dd2b74c95ba12e28006213f.jar" />
     </item>
     <item
         is-multidex="false"

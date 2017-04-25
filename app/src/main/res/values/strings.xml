@@ -9,9 +9,9 @@
 
 
     <!--Values to be customised-->
-    <string name="gigya_api_key"></string>
-    <string name="api_domain"></string>
-    <string name="facebook_app_id"></string>
+    <string name="gigya_api_key">YOUR API KEY</string>
+    <string name="api_domain">YOUR API DOMAIN</string>
+    <string name="facebook_app_id">YOUR FACEBOOK APP ID</string>
 
 
 
