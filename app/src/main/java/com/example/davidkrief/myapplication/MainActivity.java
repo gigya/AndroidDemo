@@ -45,6 +45,8 @@ public class MainActivity extends AppCompatActivity  {
     private Button emailButton;
     private String conflictingLoginID;
 
+    private boolean needToFinalize;
+
 
 
     @Override
@@ -55,6 +57,7 @@ public class MainActivity extends AppCompatActivity  {
 
         la = this;
 
+        needToFinalize = false;
         globalRegToken = null;
         conflictingLoginID = null;
         // Gigya
@@ -363,6 +366,23 @@ public class MainActivity extends AppCompatActivity  {
                         e.printStackTrace();
                     }
                     break;
+                case "twitter":
+                    params.put("provider", "twitter");
+                    try {
+                        GSAPI.getInstance().login(this, params, new GSResponseListener() {
+                            @Override
+                            public void onGSResponse(String method, GSResponse response, Object context) {
+                                try {
+                                    loginHandler(response);
+                                } catch (GSKeyNotFoundException e) {
+                                    e.printStackTrace();
+                                }
+                            }
+                        }, false, null);
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                    break;
                 case "email":
                     displayEmailSigninView(false, "");
                     break;
@@ -405,8 +425,7 @@ public class MainActivity extends AppCompatActivity  {
 
         if (response.getErrorCode() != 0) // something is not OK
         {
-
-
+            needToFinalize = false;
             switch (response.getErrorCode()) {
                 case 200010: // Login identifier already in use
                     linkAccounts();
@@ -476,6 +495,27 @@ public class MainActivity extends AppCompatActivity  {
 
 
 
+        }
+        else if(needToFinalize)
+        {
+            needToFinalize = false;
+
+            GSObject paramsFinalize = new GSObject();
+            paramsFinalize.put("regToken", globalRegToken);
+
+            GSResponseListener resListener = new GSResponseListener() {
+                @Override
+                public void onGSResponse(String method, GSResponse response, Object context) {
+                    try {
+                        Log.d(TAG, response.toString());
+
+                    } catch (Exception ex) {  ex.printStackTrace();  }
+                }
+            };
+
+            // Step 3 - Sending the request
+            String methodName = "accounts.finalizeRegistration";
+            GSAPI.getInstance().sendRequest(methodName, paramsFinalize, resListener, null);
         }
 
     }
@@ -623,13 +663,18 @@ public class MainActivity extends AppCompatActivity  {
                 params.put("profile", "{ \"email\" : \""+emailInputText+"\" }");
                 params.put("conflictHandling", "saveProfileAndFail");
 
+
                 GSResponseListener resListener = new GSResponseListener() {
                     @Override
                     public void onGSResponse(String method, GSResponse response, Object context) {
                         try {
                             Log.d(TAG, response.toString());
                             System.out.println("Successful setAccountInfo");
+                            needToFinalize = true;
                             loginHandler(response);
+
+
+
                         } catch (Exception ex) {  ex.printStackTrace();  }
                     }
                 };
