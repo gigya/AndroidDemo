@@ -59,31 +59,10 @@ public class LoggedActivity extends AppCompatActivity {
         logoutButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 GSAPI.getInstance().logout();
+                finish();
             }
         });
-
-
-
-
-
-//        GSObject params = new GSObject();
-//        params.put("password", "bbbbbB");        params.put("newPassword", "aaaaaA");
-//
-//
-//        GSResponseListener resListener = new GSResponseListener() {
-//            @Override
-//            public void onGSResponse(String method, GSResponse response, Object context) {
-//
-//                Toast.makeText(getApplicationContext(), response.toString(), Toast.LENGTH_LONG).show();
-//
-//            }
-//        };
-//
-//        String methodName = "accounts.setAccountInfo";
-//        GSAPI.getInstance().sendRequest(methodName, params, resListener, null);
-
 
     }
 

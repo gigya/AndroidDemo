@@ -138,9 +138,6 @@ public class MainActivity extends AppCompatActivity  {
             public void onLogout(Object context) {
                 Log.d(TAG, "Gigya logged out");
 
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
             }
 
             @Override
@@ -222,7 +219,7 @@ public class MainActivity extends AppCompatActivity  {
 
         // An intent contains key values
         intent.putExtra(EXTRA_MESSAGE, profileName);
-        startActivity(intent);
+        startActivityForResult(intent, 0);
     }
 
     public void displayEmailSigninView(boolean forLinkingAccounts, String conflictingLoginID) {
@@ -232,7 +229,7 @@ public class MainActivity extends AppCompatActivity  {
         intent.putExtra("forLinkingAccounts", forLinkingAccounts);
         intent.putExtra("globalRegToken", globalRegToken);
         intent.putExtra("conflictingLoginID", conflictingLoginID);
-        startActivity(intent);
+        startActivityForResult(intent, 0);
 
     }
 
@@ -241,7 +238,7 @@ public class MainActivity extends AppCompatActivity  {
         System.out.println("presentLinkingView");
         Intent intent = new Intent(this, LinkingActivity.class);
         intent.putExtra("conflictingLoginProviders", conflictingLoginProviders);
-        startActivity(intent);
+        startActivityForResult(intent, 0);
 
     }
 
