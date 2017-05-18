@@ -1,5 +1,6 @@
 package com.example.davidkrief.myapplication;
 
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -17,8 +18,12 @@ public class SignUpScreenSetModeActivity extends AppCompatActivity {
 
         GSObject params = new GSObject();
         params.put("screenSet", "Default-RegistrationLogin");
+        params.put("startScreen", "gigya-register-screen");
         GSPluginFragment pluginFragment = GSPluginFragment.newInstance("accounts.screenSet", params);
-        getSupportFragmentManager().beginTransaction().add(R.id.container, pluginFragment, "registration").commit();
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        fragmentTransaction.replace(R.id.container, pluginFragment);
+        fragmentTransaction.commit();
+
 
     }
 }

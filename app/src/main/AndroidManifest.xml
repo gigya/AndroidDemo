@@ -49,7 +49,7 @@
 
                 <data
                     android:host="gsapi"
-                    android:scheme="com.example.davidkrief.myapplication" />
+                        android:scheme="com.example.davidkrief.myapplication" />
             </intent-filter>
         </activity>
         <!--
