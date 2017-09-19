@@ -16,13 +16,24 @@ public class SignUpScreenSetModeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_sign_up_screen_set_mode);
 
 
+        GSObject customLangParams = new GSObject();
+        customLangParams.put("password_does_not_meet_complexity_requirements", "BLABLALBLALALLAA");
+
+
+
         GSObject params = new GSObject();
         params.put("screenSet", "Default-RegistrationLogin");
         params.put("startScreen", "gigya-register-screen");
+
+        params.put("customLang", customLangParams);
+
+
         GSPluginFragment pluginFragment = GSPluginFragment.newInstance("accounts.screenSet", params);
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
         fragmentTransaction.replace(R.id.container, pluginFragment);
         fragmentTransaction.commit();
+
+
 
 
     }
