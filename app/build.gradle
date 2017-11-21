@@ -1,7 +1,7 @@
 apply plugin: 'com.android.application'
 android {
     compileSdkVersion 25
-    buildToolsVersion '25.0.0'
+    buildToolsVersion '26.0.2'
 
     defaultConfig {
         applicationId "com.example.davidkrief.myapplication"
@@ -24,7 +24,7 @@ repositories {
 }
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile files('libs/gigya-sdk-3.3.9.jar')
+    compile files('libs/gigya-sdk-3.3.11.jar')
     compile 'junit:junit:4.12'
 
     compile 'com.android.support:support-v4:25.3.1'

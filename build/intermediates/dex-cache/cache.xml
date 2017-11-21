@@ -3,57 +3,12 @@
 
     <item
         is-multidex="false"
-        jar="/Users/davidkrief/.android/build-cache/0e673390d0d24c1519487e8fc9f360249b667241/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="25f55515117e14a658120a7b01a9ea5170409db4">
-        <dex dex="/Users/davidkrief/Google Drive/DEV/android/AndroidDemo/app/build/intermediates/pre-dexed/debug/classes_73a21859fb7e0870dd55ef9e5e7530e8b2283c6f.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/davidkrief/.android/build-cache/43f809a2b4c33cecf9287dc92bc1dabd7a2f0870/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="12032271e6be735e811ad529cb08ff066c381640">
-        <dex dex="/Users/davidkrief/Google Drive/DEV/android/AndroidDemo/app/build/intermediates/pre-dexed/debug/classes_bf2f97631b37000fdcbf4c02bd548e6ae4741cab.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/Users/davidkrief/Google Drive/DEV/android/AndroidDemo/app/libs/gigya-sdk-3.3.9.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
         sha1="a19bb3aa1d1c76b5dfb01ac25b1a4e75ff9d5285">
         <dex dex="/Users/davidkrief/Google Drive/DEV/android/AndroidDemo/app/build/intermediates/pre-dexed/debug/gigya-sdk-3.3.9_6a66ce8ab3f6d58169453f952ab0489b5d78caed.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/davidkrief/.android/build-cache/cb41ef68484402aeb817f62bfe8f9df726d4d59f/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="19696dc358ac668e341f28c41e3387d61ccdb81d">
-        <dex dex="/Users/davidkrief/Google Drive/DEV/android/AndroidDemo/app/build/intermediates/pre-dexed/debug/classes_46ee82fb23bcf39134729a738f52f127ee43ce9e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/davidkrief/.android/build-cache/f3c0a5d62d43b85d0e7b6fb8f178e32aafd1e0b3/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="bdcc2a9572f18b8c90a3a157cab6cdfc97c6c736">
-        <dex dex="/Users/davidkrief/Google Drive/DEV/android/AndroidDemo/app/build/intermediates/pre-dexed/debug/classes_5821add30cd08f32da6740a2dcc5b1e851eadcf0.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/davidkrief/.android/build-cache/c94ec34e50f7c1da70b1b852efaf2929c74b2b1b/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="6003d64df88a6ce5e961fa2bad7f1b9b97689ac1">
-        <dex dex="/Users/davidkrief/Google Drive/DEV/android/AndroidDemo/app/build/intermediates/pre-dexed/debug/classes_7dbd006801d2143d3b07bb3a6068a15cfd220465.jar" />
     </item>
 
 </items>
